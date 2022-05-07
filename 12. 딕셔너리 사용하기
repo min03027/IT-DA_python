@@ -1,0 +1,605 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled5.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOaYY29+6IQdWq5jlqXrPKr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/12.%20%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "WhznHk9-08-b"
+      },
+      "outputs": [],
+      "source": [
+        "lux = [490,334,550,18.72]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux = {'health' : 490, 'mana' :334, 'melee' : 550, 'armor':18.72}"
+      ],
+      "metadata": {
+        "id": "d-xAoSrQ1FPd"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uYI4eNfI1dQ4",
+        "outputId": "3551db7a-25ff-4d24-c858-e0400705dafe"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'armor': 18.72, 'health': 490, 'mana': 334, 'melee': 550}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x={100: 'hundred', False : 0,3.5: [3.5,3.5]}"
+      ],
+      "metadata": {
+        "id": "V5_PfrbS6Hf1"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DH7o71hH65M6",
+        "outputId": "25d01501-603e-4e44-865e-2a5bf7052597"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{False: 0, 3.5: [3.5, 3.5], 100: 'hundred'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x={}"
+      ],
+      "metadata": {
+        "id": "Nm8G5pAR8vYq"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oQIh2rsA94Ci",
+        "outputId": "d373446d-9b54-40ba-ed42-38a9e6093ac5"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y=dict()"
+      ],
+      "metadata": {
+        "id": "KrRACZX494_t"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fonCPXZx97A-",
+        "outputId": "5a4e813a-98dd-4a54-8d89-e3a65e270baa"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux1 = dict(health=490, mana=334, melee=550,armor=18.72)"
+      ],
+      "metadata": {
+        "id": "_C-KYtdX97mR"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DRPjfJVs-Ufa",
+        "outputId": "4720f33b-ce38-4126-f4b2-1053f66ebaee"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'armor': 18.72, 'health': 490, 'mana': 334, 'melee': 550}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux2 =dict(zip(['health','mana','melee','armor'],[490,334,550,18.72]))"
+      ],
+      "metadata": {
+        "id": "imxqVvBl-afo"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3eMS1RfCHFF6",
+        "outputId": "afaca8d9-8961-41a1-b489-16976fecd0e3"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'armor': 18.72, 'health': 490, 'mana': 334, 'melee': 550}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux3 = dict([('health',490),('mana' , 334), ('melee',550),('armor',18.72)])"
+      ],
+      "metadata": {
+        "id": "d7PSWyMaHHRb"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux3"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-3LlN45kHqjE",
+        "outputId": "4c834973-bbe9-4f8c-c75b-069421e6c099"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'armor': 18.72, 'health': 490, 'mana': 334, 'melee': 550}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux4 = dict({'health': 490, 'mana': 334, 'melee':550, 'armor':18.72})"
+      ],
+      "metadata": {
+        "id": "UoDGYtFRHrx_"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux4"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bEu_RTJEIGK_",
+        "outputId": "3f3b7767-2631-4ecf-d0e8-4d7c2d86b15a"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'armor': 18.72, 'health': 490, 'mana': 334, 'melee': 550}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux['health']"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kiVHzFoIIHiH",
+        "outputId": "8a6d0a12-ab2b-4199-bfc0-186bde5d67bb"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "490"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux['armor']"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YjMWrnV9IPE4",
+        "outputId": "1ec9e823-aa7f-4d99-9c5e-4ee8326bbb71"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "18.72"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9nZa-3QIISQ7",
+        "outputId": "5a210c33-20c2-4893-8559-f6592bbe7c37"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'armor': 18.72, 'health': 490, 'mana': 334, 'melee': 550}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux['health'] = 2037"
+      ],
+      "metadata": {
+        "id": "Wx9KsFNmIyIb"
+      },
+      "execution_count": 23,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TDt1tUYjJl0c",
+        "outputId": "df289296-4896-4a29-d2f4-8b1930ea8b2c"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'armor': 18.72, 'health': 2037, 'mana': 334, 'melee': 550}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux['mana_regen'] = 3.28"
+      ],
+      "metadata": {
+        "id": "dv1YHxy4JnPk"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lux"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ob_QiOUNJ6R9",
+        "outputId": "4880959e-5357-46c1-e721-1f7d5a43410e"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'armor': 18.72, 'health': 2037, 'mana': 334, 'mana_regen': 3.28, 'melee': 550}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'health' in lux"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Kr5-hPP9J7fc",
+        "outputId": "031eb9d3-e745-4080-9d51-9700a9a57efa"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 27
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'attack_speed' not in lux"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aVaD8fMGKCdm",
+        "outputId": "8172614c-82bc-4223-9c2b-d9b1589d9717"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'health' not in lux"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7mUF6xv2LXr8",
+        "outputId": "a8e21602-ff6f-41d3-ac18-f8eef0dc4cbc"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(lux)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IeEXXmsKLcAN",
+        "outputId": "61caa094-f99c-4a13-8b53-a407d8fc46cb"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "3lFnsi4MLfZi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
