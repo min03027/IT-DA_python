@@ -1,0 +1,167 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled6.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNtGJPwD2tPzudetvMKjhYI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/13.%20if%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%EC%9C%BC%EB%A1%9C%20%ED%8A%B9%EC%A0%95%20%EC%A1%B0%EA%B1%B4%EC%9D%BC%20%EB%95%8C%20%EC%BD%94%EB%93%9C%20%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "cKi5u5O8Pyh6"
+      },
+      "outputs": [],
+      "source": [
+        "x=10"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x == 10:\n",
+        "    print('10입니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ssd4OSueRx5A",
+        "outputId": "686361d8-8b97-4931-b9ff-9770af9489d9"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x == 10:\n",
+        "    File \"<stdin>\", line 1\n",
+        "    if x == 10:"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 137
+        },
+        "id": "h2PL2lAYR0gW",
+        "outputId": "174722ed-ff3d-480b-b708-2ad954a5abc5"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-9-f694a0aa547b>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    File \"<stdin>\", line 1\u001b[0m\n\u001b[0m                 ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x= 10\n",
+        "if x ==10:\n",
+        "    pass"
+      ],
+      "metadata": {
+        "id": "CkD_m5oSSmVX"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x == 10:\n",
+        "    print('x에 들어있는 숫자는')\n",
+        "    print('10입니다')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MmyO_rwHUtyu",
+        "outputId": "54674c99-9b2d-46db-82e2-6642f4468018"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x에 들어있는 숫자는\n",
+            "10입니다\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x >=10:\n",
+        "  print('10 이상입니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z7L5H6gWVX_8",
+        "outputId": "dff1bc09-0452-42b6-e9fd-169946935bfa"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 이상입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "7_NlVczQV1Vd"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
