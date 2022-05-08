@@ -1,0 +1,384 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled7.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO/nh3FTxijxThGeK3+DOZU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/14.else%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC%20%EB%91%90%20%EB%B0%A9%ED%96%A5%EC%9C%BC%EB%A1%9C%20%EB%B6%84%EA%B8%B0%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "RCR6DYN4cK1k"
+      },
+      "outputs": [],
+      "source": [
+        "x = 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x == 10:\n",
+        "    print('10입니다.')\n",
+        "else:\n",
+        "    print('10이 아닙니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rPGg_PTtc5O3",
+        "outputId": "a2ebf4d6-7e37-4e74-930d-18a5c744aae8"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10이 아닙니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 5"
+      ],
+      "metadata": {
+        "id": "NpO7UKWic8CL"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x == 10:\n",
+        "    y = x\n",
+        "else:\n",
+        "  y = 0"
+      ],
+      "metadata": {
+        "id": "OkyuI5VkdnsB"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ljPxujg1dvpr",
+        "outputId": "31501e02-42a2-4691-cab7-5c54b01a39cb"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y = x if x == 10 else 0"
+      ],
+      "metadata": {
+        "id": "ARJOrkl0dwfg"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QYhgWmJEhSaW",
+        "outputId": "3e6e592b-7850-4ec5-f02e-b9adca4fd7b2"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if True:\n",
+        "    print('참')\n",
+        "else:\n",
+        "    print('거짓')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mwj9wqO_hUSq",
+        "outputId": "34d54edf-1a87-4bd1-94f5-d5cece4d2da4"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "참\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if False:\n",
+        "  print('참')\n",
+        "else:\n",
+        "  print('거짓')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "275ZdD80iMEs",
+        "outputId": "04568b06-e2ca-472b-ab4a-bdf03fbb8c7e"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "거짓\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if None:\n",
+        "  print('참')\n",
+        "else:\n",
+        "  print('거짓')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J54yTvGWiVFL",
+        "outputId": "5e8d8ba1-fe8a-4ced-ffbd-b0bd7c597b4b"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "거짓\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "숫자는 정수(2진수, 10진수, 16진수), 실수와 관계없이 0이면 거짓, 0이 아닌 수는 참입니다."
+      ],
+      "metadata": {
+        "id": "lx_rk1g2i2WJ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "문자열은 내용이 있을 때 참, 빈 문자열은 거짓입니다."
+      ],
+      "metadata": {
+        "id": "thdxy3_Yi-vg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10"
+      ],
+      "metadata": {
+        "id": "zSbWpenEi7Tb"
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y = 20"
+      ],
+      "metadata": {
+        "id": "gbupvXyyjSap"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x == 10 and y == 20:\n",
+        "  print('참')\n",
+        "else:\n",
+        "  print('거짓')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0qoYTQktjTuy",
+        "outputId": "c8d36fc5-bb98-455c-d1bb-51fca4610bab"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "참\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x > 0:\n",
+        "  if x < 20:\n",
+        "    print('20보다 작은 양수입니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uXH2hRTVjZdG",
+        "outputId": "b69ea620-5389-4bff-9012-d394b13def7a"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20보다 작은 양수입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x > 0 and x < 20:\n",
+        "  print('20보다 작은 양수입니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EL9N3Nj0jjFv",
+        "outputId": "2430f9a1-e6b1-461f-d93a-f58454d8047e"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20보다 작은 양수입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if 0 < x < 20:\n",
+        "  print('20보다 작은 양수 입니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DE-XuXizl8yi",
+        "outputId": "b00d03ce-074a-4abb-a619-703dc18dbc62"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20보다 작은 양수 입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "UydJdoNAmDRP"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
