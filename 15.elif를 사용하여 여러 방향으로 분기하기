@@ -1,0 +1,118 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled8.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMN05THi41Vzu2Uzs9YIGzf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/15.elif%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC%20%EC%97%AC%EB%9F%AC%20%EB%B0%A9%ED%96%A5%EC%9C%BC%EB%A1%9C%20%EB%B6%84%EA%B8%B0%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "Fja5pVoltmRC"
+      },
+      "outputs": [],
+      "source": [
+        "x = 20"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x == 10:\n",
+        "  print('10입니다.')\n",
+        "elif x == 20:\n",
+        "  print('20입니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qIDdm9gtuC5L",
+        "outputId": "bee2873f-6cdc-45ca-86bc-76f94cbc7265"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 30"
+      ],
+      "metadata": {
+        "id": "8ENkPkNFuNTr"
+      },
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if x ==10:\n",
+        "  print('10입니다.')\n",
+        "elif x == 20:\n",
+        "  print('20입니다.')\n",
+        "else:\n",
+        "  print('10도 20도 아닙니다.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PLP8DTiJuWHE",
+        "outputId": "3e280cee-451a-4fef-c801-83886276bbc8"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10도 20도 아닙니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "19IhHFrtuk8-"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
