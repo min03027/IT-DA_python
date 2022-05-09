@@ -1,0 +1,329 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled10.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOrddi7RvP7tr+q7+g49EbA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/17.while%20%EB%B0%98%EB%B3%B5%EB%AC%B8%EC%9C%BC%EB%A1%9C%20Hello%2Cworld!%20100%EB%B2%88%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "YaZ9D1un8yn4"
+      },
+      "outputs": [],
+      "source": [
+        "i = 0"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while i < 10:\n",
+        "  print('Hello, world!')\n",
+        "  i += 1"
+      ],
+      "metadata": {
+        "id": "OJ4Y9buT-ots"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 100"
+      ],
+      "metadata": {
+        "id": "tpnd2EJ6_oW_"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while i > 0:\n",
+        "  print('Hello,world!')\n",
+        "  i -= 1"
+      ],
+      "metadata": {
+        "id": "T0w-HFdnDJb2"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "count = int(input('반복할 횟수를 입력하세요: '))\n",
+        "i = 0 \n",
+        "while i < count:\n",
+        "  print('Hello, world!', i)\n",
+        "  i += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LFnEFMAJDZ4Y",
+        "outputId": "d23e8886-0137-4a42-8b38-dc93042751ad"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "반복할 횟수를 입력하세요: 3\n",
+            "Hello, world! 0\n",
+            "Hello, world! 1\n",
+            "Hello, world! 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "count = int(input('반복할 횟수를 입력하세요 :'))\n",
+        "while count > 0:\n",
+        "  print('Hello, world!',count)\n",
+        "  count -= 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8hHfX6soDlkB",
+        "outputId": "541a37d5-a6d5-42d2-e64f-2da11f7bc16c"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "반복할 횟수를 입력하세요 :3\n",
+            "Hello, world! 3\n",
+            "Hello, world! 2\n",
+            "Hello, world! 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random"
+      ],
+      "metadata": {
+        "id": "6Koetrx-EbYx"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "random.random()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5fCM_yrLGEcY",
+        "outputId": "f823c123-3358-4763-b582-9658d9c42a55"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0.8215538441092138"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "random.random()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_fzBp-lFGJdv",
+        "outputId": "a3cbcdb8-c26c-4728-fdfc-636697e82a3b"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0.7260370663210778"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "random.randint(1,6)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "btNyJrrHGSdu",
+        "outputId": "d847a45c-8f76-4056-9689-b62fde9a41d1"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "6"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "random.randint(1,6)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lPyivJMKGo-o",
+        "outputId": "340cf878-3cce-4126-b957-354c4c525c65"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 0\n",
+        "while i != 3:\n",
+        "  i = random.randint(1,6)\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dlljqHoDOXg8",
+        "outputId": "3acdc968-6dc8-4f80-e870-f9141f98e7bd"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "1\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dice = [1,2,3,4,5,6]"
+      ],
+      "metadata": {
+        "id": "b-vu3kv9OhP6"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "random.choice(dice)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dOHmaLVvPdrZ",
+        "outputId": "57f1281f-8f6f-4e70-c183-02cfedbfdbca"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "kJJ7jQdqQFWJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
