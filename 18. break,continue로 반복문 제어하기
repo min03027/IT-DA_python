@@ -1,0 +1,525 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled11.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMybtrDt58g1iLaNi0uw7n1",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/18.%20break%2Ccontinue%EB%A1%9C%20%EB%B0%98%EB%B3%B5%EB%AC%B8%20%EC%A0%9C%EC%96%B4%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bqNJng8yapbR",
+        "outputId": "6ea0588d-64c4-44cd-ec7b-f14c3cda8e18"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "11\n",
+            "12\n",
+            "13\n",
+            "14\n",
+            "15\n",
+            "16\n",
+            "17\n",
+            "18\n",
+            "19\n",
+            "20\n",
+            "21\n",
+            "22\n",
+            "23\n",
+            "24\n",
+            "25\n",
+            "26\n",
+            "27\n",
+            "28\n",
+            "29\n",
+            "30\n",
+            "31\n",
+            "32\n",
+            "33\n",
+            "34\n",
+            "35\n",
+            "36\n",
+            "37\n",
+            "38\n",
+            "39\n",
+            "40\n",
+            "41\n",
+            "42\n",
+            "43\n",
+            "44\n",
+            "45\n",
+            "46\n",
+            "47\n",
+            "48\n",
+            "49\n",
+            "50\n",
+            "51\n",
+            "52\n",
+            "53\n",
+            "54\n",
+            "55\n",
+            "56\n",
+            "57\n",
+            "58\n",
+            "59\n",
+            "60\n",
+            "61\n",
+            "62\n",
+            "63\n",
+            "64\n",
+            "65\n",
+            "66\n",
+            "67\n",
+            "68\n",
+            "69\n",
+            "70\n",
+            "71\n",
+            "72\n",
+            "73\n",
+            "74\n",
+            "75\n",
+            "76\n",
+            "77\n",
+            "78\n",
+            "79\n",
+            "80\n",
+            "81\n",
+            "82\n",
+            "83\n",
+            "84\n",
+            "85\n",
+            "86\n",
+            "87\n",
+            "88\n",
+            "89\n",
+            "90\n",
+            "91\n",
+            "92\n",
+            "93\n",
+            "94\n",
+            "95\n",
+            "96\n",
+            "97\n",
+            "98\n",
+            "99\n"
+          ]
+        }
+      ],
+      "source": [
+        "i = 0\n",
+        "while True:\n",
+        "  print(i)\n",
+        "  i += 1\n",
+        "  if i == 100:\n",
+        "    break\n",
+        "  "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(10000):\n",
+        "  print(i)\n",
+        "  if i == 100:\n",
+        "    break"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SFp0Z8WIbvaE",
+        "outputId": "669b7542-f210-45aa-f937-985c36835bbb"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "11\n",
+            "12\n",
+            "13\n",
+            "14\n",
+            "15\n",
+            "16\n",
+            "17\n",
+            "18\n",
+            "19\n",
+            "20\n",
+            "21\n",
+            "22\n",
+            "23\n",
+            "24\n",
+            "25\n",
+            "26\n",
+            "27\n",
+            "28\n",
+            "29\n",
+            "30\n",
+            "31\n",
+            "32\n",
+            "33\n",
+            "34\n",
+            "35\n",
+            "36\n",
+            "37\n",
+            "38\n",
+            "39\n",
+            "40\n",
+            "41\n",
+            "42\n",
+            "43\n",
+            "44\n",
+            "45\n",
+            "46\n",
+            "47\n",
+            "48\n",
+            "49\n",
+            "50\n",
+            "51\n",
+            "52\n",
+            "53\n",
+            "54\n",
+            "55\n",
+            "56\n",
+            "57\n",
+            "58\n",
+            "59\n",
+            "60\n",
+            "61\n",
+            "62\n",
+            "63\n",
+            "64\n",
+            "65\n",
+            "66\n",
+            "67\n",
+            "68\n",
+            "69\n",
+            "70\n",
+            "71\n",
+            "72\n",
+            "73\n",
+            "74\n",
+            "75\n",
+            "76\n",
+            "77\n",
+            "78\n",
+            "79\n",
+            "80\n",
+            "81\n",
+            "82\n",
+            "83\n",
+            "84\n",
+            "85\n",
+            "86\n",
+            "87\n",
+            "88\n",
+            "89\n",
+            "90\n",
+            "91\n",
+            "92\n",
+            "93\n",
+            "94\n",
+            "95\n",
+            "96\n",
+            "97\n",
+            "98\n",
+            "99\n",
+            "100\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(100):\n",
+        "  if i % 2 == 0:\n",
+        "    continue\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YNFzADwOcA_4",
+        "outputId": "9a022168-1fd7-4b87-a2b1-f10a4925dbf6"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n",
+            "11\n",
+            "13\n",
+            "15\n",
+            "17\n",
+            "19\n",
+            "21\n",
+            "23\n",
+            "25\n",
+            "27\n",
+            "29\n",
+            "31\n",
+            "33\n",
+            "35\n",
+            "37\n",
+            "39\n",
+            "41\n",
+            "43\n",
+            "45\n",
+            "47\n",
+            "49\n",
+            "51\n",
+            "53\n",
+            "55\n",
+            "57\n",
+            "59\n",
+            "61\n",
+            "63\n",
+            "65\n",
+            "67\n",
+            "69\n",
+            "71\n",
+            "73\n",
+            "75\n",
+            "77\n",
+            "79\n",
+            "81\n",
+            "83\n",
+            "85\n",
+            "87\n",
+            "89\n",
+            "91\n",
+            "93\n",
+            "95\n",
+            "97\n",
+            "99\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 0\n",
+        "while i < 100:\n",
+        "  i += 1\n",
+        "  if i % 2 == 0:\n",
+        "    continue\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1vS_NOircb8M",
+        "outputId": "5fd79538-c3ae-4fa1-d0ce-7aabaa71a2ee"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n",
+            "11\n",
+            "13\n",
+            "15\n",
+            "17\n",
+            "19\n",
+            "21\n",
+            "23\n",
+            "25\n",
+            "27\n",
+            "29\n",
+            "31\n",
+            "33\n",
+            "35\n",
+            "37\n",
+            "39\n",
+            "41\n",
+            "43\n",
+            "45\n",
+            "47\n",
+            "49\n",
+            "51\n",
+            "53\n",
+            "55\n",
+            "57\n",
+            "59\n",
+            "61\n",
+            "63\n",
+            "65\n",
+            "67\n",
+            "69\n",
+            "71\n",
+            "73\n",
+            "75\n",
+            "77\n",
+            "79\n",
+            "81\n",
+            "83\n",
+            "85\n",
+            "87\n",
+            "89\n",
+            "91\n",
+            "93\n",
+            "95\n",
+            "97\n",
+            "99\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(10):\n",
+        "  pass"
+      ],
+      "metadata": {
+        "id": "OM2F-fCJdqti"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "count = int(input('반복할 횟수를 입력하세요: '))\n",
+        "i = 0\n",
+        "while True:\n",
+        "  print(i)\n",
+        "  i += 1\n",
+        "  if i == count:\n",
+        "    break"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "11VcbFtjd0cu",
+        "outputId": "62ed366b-a0d5-4f96-c164-53679e000340"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "반복할 횟수를 입력하세요: 4\n",
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "count = int(input('반복할 횟수를 입력하세요: '))\n",
+        "for i in range(count + 1):\n",
+        "  if i % 2 == 0:\n",
+        "    continue\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hX-X_3ZGePg8",
+        "outputId": "74bde1d9-7dcf-4801-db17-8f9986c07d8f"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "반복할 횟수를 입력하세요: 9\n",
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "ZZcU6ibienZp"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
