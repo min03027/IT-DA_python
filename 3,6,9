@@ -1,0 +1,239 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled14.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOvX1SPbQwudwuwCHNlmSCM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/3%2C6%2C9\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 61,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NMCuwb19vv7F",
+        "outputId": "84af7a2a-f0ec-4f95-8bfd-fbf3bf448954"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "짝 1\n",
+            "4\n",
+            "5\n",
+            "짝 1\n",
+            "7\n",
+            "8\n",
+            "10\n",
+            "11\n",
+            "12\n",
+            "짝 1\n",
+            "14\n",
+            "15\n",
+            "짝 1\n",
+            "17\n",
+            "18\n",
+            "20\n",
+            "21\n",
+            "22\n",
+            "짝 1\n",
+            "24\n",
+            "25\n",
+            "짝 1\n",
+            "27\n",
+            "28\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 2\n",
+            "짝 1\n",
+            "짝 1\n",
+            "40\n",
+            "41\n",
+            "42\n",
+            "짝 1\n",
+            "44\n",
+            "45\n",
+            "짝 1\n",
+            "47\n",
+            "48\n",
+            "50\n",
+            "51\n",
+            "52\n",
+            "짝 1\n",
+            "54\n",
+            "55\n",
+            "짝 1\n",
+            "57\n",
+            "58\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 2\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 1\n",
+            "짝 1\n",
+            "70\n",
+            "71\n",
+            "72\n",
+            "짝 1\n",
+            "74\n",
+            "75\n",
+            "짝 1\n",
+            "77\n",
+            "78\n",
+            "80\n",
+            "81\n",
+            "82\n",
+            "짝 1\n",
+            "84\n",
+            "85\n",
+            "짝 1\n",
+            "87\n",
+            "88\n"
+          ]
+        }
+      ],
+      "source": [
+        "for i in range(1,100):\n",
+        "  i=str(i)\n",
+        "  b=1\n",
+        "  while b < 2:\n",
+        "    a=0\n",
+        "    b+=1\n",
+        "    if '3' in i:\n",
+        "     a += 1\n",
+        "    if '6' in i:\n",
+        "     a += 1\n",
+        "    if '9' in i:\n",
+        "     a += 1\n",
+        "    else:\n",
+        "      if a==0:\n",
+        "        print(i)\n",
+        "      else:\n",
+        "        print('짝', a)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "UVK4oXfYC80X"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 0 \n",
+        "while True:\n",
+        "    if a % 10 != 3:\n",
+        "        a += 1\n",
+        "        continue\n",
+        "    if a > 100:\n",
+        "        break\n",
+        "    print(a,end='짝' )\n",
+        "    a += 1\n",
+        "    \n",
+        "a = 12\n",
+        "while True:\n",
+        "    if a % 3 != 0:\n",
+        "        a += 1\n",
+        "        continue\n",
+        "    if a > 100:\n",
+        "        break\n",
+        "    print(a,end='짝짝')\n",
+        "    a += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nw3M0whbwP94",
+        "outputId": "c2d9b5b0-1f3f-4aac-fc46-eb2bac364eb6"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "4짝13\n",
+            "14짝23\n",
+            "24짝33\n",
+            "34짝43\n",
+            "44짝53\n",
+            "54짝63\n",
+            "64짝73\n",
+            "74짝83\n",
+            "84짝93\n",
+            "94짝12짝짝15짝짝18짝짝21짝짝24짝짝27짝짝30짝짝33짝짝36짝짝39짝짝42짝짝45짝짝48짝짝51짝짝54짝짝57짝짝60짝짝63짝짝66짝짝69짝짝72짝짝75짝짝78짝짝81짝짝84짝짝87짝짝90짝짝93짝짝96짝짝99짝짝"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1,101)\n",
+        "a= 0\n",
+        "  while True:\n",
+        "    if \n",
+        "    \n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "CpX2sgy2_UDt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "ouPgMfxbC-CN"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
