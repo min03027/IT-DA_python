@@ -1,0 +1,2552 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled17.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPtC5csoWQuJrwjir+1gTa8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/22.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EC%99%80%20%ED%8A%9C%ED%94%8C%20%EC%9D%91%EC%9A%A9%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "NakzaMidF3QF"
+      },
+      "outputs": [],
+      "source": [
+        "a = [10,20,30]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.append(500)"
+      ],
+      "metadata": {
+        "id": "hqDV0-PcHGxN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AqchxZogHJzf",
+        "outputId": "cd9b65f6-253a-4d0f-be55-953e195d9e36"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 20, 30, 500]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qEN3BiYvHMAB",
+        "outputId": "9b19aa37-33d5-4a96-9140-b1508140a03d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= []"
+      ],
+      "metadata": {
+        "id": "f8bPRRG2HNWq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.append(10)"
+      ],
+      "metadata": {
+        "id": "IcI-Epo3HQOD"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Wlenu2OjHVho",
+        "outputId": "7e9682c7-8303-418b-d10c-cc8e77495e10"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= [10,20,30]"
+      ],
+      "metadata": {
+        "id": "-QserahaHSBs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.extend([500, 600])"
+      ],
+      "metadata": {
+        "id": "c2dtXsmdIgze"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b6FwtQIHIkGy",
+        "outputId": "6577c576-517c-44c6-cfeb-579c14651ce2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 20, 30, 500, 600]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2lYx7qgtIk_6",
+        "outputId": "470f97b8-4f9a-4492-d0df-7c99e24ef585"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[10,20,30]"
+      ],
+      "metadata": {
+        "id": "R2mtGENcImRc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.insert(2,500)"
+      ],
+      "metadata": {
+        "id": "KxlVUhrMIsNf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9OBR31-wJq4T",
+        "outputId": "945f3f2f-7ce2-4ce1-9e27-cd3106287601"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 20, 500, 30]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a8nlPVeUJroc",
+        "outputId": "4c4d296d-82c5-4c56-8714-55995df78fde"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= [10,20,30]"
+      ],
+      "metadata": {
+        "id": "U1E-0WA6Js88"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a[1:1]=[500,600]"
+      ],
+      "metadata": {
+        "id": "ILvo1LkfK9qA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4bJSDUyyLAmx",
+        "outputId": "8061f6dd-ecec-414b-eb74-22748faff755"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 500, 600, 20, 30]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.pop()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K2C6Dp-pLBRr",
+        "outputId": "a7d4ef14-97f5-4058-a00f-810bea164d56"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "30"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U4NT96y9RTjW",
+        "outputId": "964e6b44-56c4-49ba-9447-7bcdb3781e4f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 500, 600, 20]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[10,20,30]"
+      ],
+      "metadata": {
+        "id": "8VFI-4NgRUZ7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.pop(1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s-smqS1QRY9W",
+        "outputId": "3c432b6b-fea4-4608-975a-6d34806ade81"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "20"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1HWf4FQERcE3",
+        "outputId": "7f245af8-0ea4-40fa-9847-87e132e40018"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 30]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "del a[1]"
+      ],
+      "metadata": {
+        "id": "Bozs119TRgXB"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TydubSGYSFn-",
+        "outputId": "b3efcf22-4e62-4b05-e497-15883536ad1a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[10,20,30]"
+      ],
+      "metadata": {
+        "id": "s8wTDN2SSHJt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.remove(20)"
+      ],
+      "metadata": {
+        "id": "QnpK2ZiqSK8o"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AWbpvyzwSMo1",
+        "outputId": "1405f1ac-67e2-4f22-b2dc-2bffd21edb5c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 30]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[10,20,30,15,20,40]"
+      ],
+      "metadata": {
+        "id": "GmgTHIX6SOZJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.count(20)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HfjT0dIuSnnr",
+        "outputId": "9d54e6f1-13fd-4e02-ee09-5cee9403378c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.reverse()"
+      ],
+      "metadata": {
+        "id": "Bd-fSDZzSqfZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DBVQcvSJSuU8",
+        "outputId": "713362a7-276f-4e04-d9e2-022c42ffbc62"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[40, 20, 15, 30, 20, 10]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 35
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.sort()"
+      ],
+      "metadata": {
+        "id": "RINqawqQSvR-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NodeQLcLS0Qx",
+        "outputId": "28d8e225-a7eb-4238-c4f1-d4a108eaa03f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 15, 20, 20, 30, 40]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b=[10,20,30,15,20,40]"
+      ],
+      "metadata": {
+        "id": "OykmLtvtUDhv"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sorted(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uwKxq3m2VcYu",
+        "outputId": "6ebb02f5-30a2-4f4f-cf9f-d6ba1157fdc3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 15, 20, 20, 30, 40]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[10,20,30]"
+      ],
+      "metadata": {
+        "id": "jpSwmRxTVeJA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "del a[:]"
+      ],
+      "metadata": {
+        "id": "oCy9hK-vWbhR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RQMStIKCWq4T",
+        "outputId": "cf30276b-dfac-4478-b1b0-1e59ca94ad33"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a =[10,20,30]"
+      ],
+      "metadata": {
+        "id": "V6_Olb2GXbLC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a[len(a):] = [500]"
+      ],
+      "metadata": {
+        "id": "xBr4CgzvXg2W"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xgdpXA7hXlgm",
+        "outputId": "84d5ff66-c6f4-4091-dfd0-0f683a6ea419"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 20, 30, 500]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 46
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "seq = [10,20,30]"
+      ],
+      "metadata": {
+        "id": "mKS1RRw9YhO_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "seq[-1]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C2Cw6Tk8aB7X",
+        "outputId": "77f7116e-61ef-4aaa-9241-3ddb83b0e834"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "30"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 51
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a =[]"
+      ],
+      "metadata": {
+        "id": "LdGd3CRzbkNo"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "seq = []\n",
+        "if seq:\n",
+        "  print(seq[-1])"
+      ],
+      "metadata": {
+        "id": "ceUildHkbmgk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [0,0,0,0,0]"
+      ],
+      "metadata": {
+        "id": "3DhvcoOVbqVj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b=a"
+      ],
+      "metadata": {
+        "id": "DD3aAsuZcMBA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a is b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AydyAcadcM19",
+        "outputId": "74be3318-822e-4379-ca3f-dcfd9f86821a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 58
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b[2]=99"
+      ],
+      "metadata": {
+        "id": "VUwAzSJZcPSt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "87keSNg9cSAm",
+        "outputId": "dfdca52f-f8cc-46a7-df09-f119cb974f10"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 0, 99, 0, 0]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 60
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QURE6DkVcSby",
+        "outputId": "bd5e383a-233d-49e7-956f-28838876e935"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 0, 99, 0, 0]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 61
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[0,0,0,0,0]"
+      ],
+      "metadata": {
+        "id": "oxMSVMVycTEo"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b=a.copy()"
+      ],
+      "metadata": {
+        "id": "SZVLRUj0cYCJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a is b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BMeaLD39caWM",
+        "outputId": "f3d4164a-d6d9-46a8-f572-26bda12579b9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 64
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a == b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "geHp-Zxjghgf",
+        "outputId": "f80b9e0d-1948-4a12-ce2c-1b54a866dbcb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 65
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b[2]= 99"
+      ],
+      "metadata": {
+        "id": "l_Qbvctngi3N"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [38,21,53,62,19]"
+      ],
+      "metadata": {
+        "id": "ZxTSM08ngmFC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in a:\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "96oEowIugsuM",
+        "outputId": "2d83e0e4-43d0-4b5b-ecc6-5b9f3cc1979b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "38\n",
+            "21\n",
+            "53\n",
+            "62\n",
+            "19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in [38,21,53,62,19]:\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oIVCCfSeg6d1",
+        "outputId": "55bb5892-af43-4591-a117-15d5f094bb78"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "38\n",
+            "21\n",
+            "53\n",
+            "62\n",
+            "19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [38,21,53,62,19]"
+      ],
+      "metadata": {
+        "id": "YkCJAU7OhFdz"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i =0"
+      ],
+      "metadata": {
+        "id": "kgLMnrms6RfK"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while i < len(a):\n",
+        "  print(a[i])\n",
+        "  i +=1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZDIRGjJJ6UW6",
+        "outputId": "d8009527-8ec2-4769-92cb-6ef735b8bb82"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "38\n",
+            "21\n",
+            "53\n",
+            "62\n",
+            "19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [38,21,53,62,19]"
+      ],
+      "metadata": {
+        "id": "VKT4nC_W6bzy"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i =0"
+      ],
+      "metadata": {
+        "id": "_TIm0g9a62m_"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while i <= len(a):\n",
+        "  print(a[i])\n",
+        "  i += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 303
+        },
+        "id": "zYuQqUf_63wy",
+        "outputId": "2fc9085f-6786-4290-c1a7-a6fefcc352ec"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "38\n",
+            "21\n",
+            "53\n",
+            "62\n",
+            "19\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "IndexError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-7-7f8ba5967508>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0mi\u001b[0m \u001b[0;34m<=\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m   \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m   \u001b[0mi\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mIndexError\u001b[0m: list index out of range"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while i < len(a):\n",
+        "  print(a[i])\n",
+        "  i += 1"
+      ],
+      "metadata": {
+        "id": "dDTNXbiV7ByQ"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [38,21,53,62,19]\n",
+        "smallest =a[0]"
+      ],
+      "metadata": {
+        "id": "4s0TU3lV72Ch"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in a:\n",
+        "  if i < smallest:\n",
+        "    smallest = i"
+      ],
+      "metadata": {
+        "id": "3P94F3YR8IhM"
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "smallest"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8-rhaW128wcV",
+        "outputId": "0d0203ff-b81f-4806-83e8-ec83d18118ae"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "19"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [38,21,53,62,19]"
+      ],
+      "metadata": {
+        "id": "bCi3j3TX9g3h"
+      },
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "largest = a[0]"
+      ],
+      "metadata": {
+        "id": "AWk-koHP9xMB"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in a:\n",
+        "  if i > largest:\n",
+        "    largest = i"
+      ],
+      "metadata": {
+        "id": "t8QHR6Dr95P2"
+      },
+      "execution_count": 17,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "largest"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BmhS7J619-vg",
+        "outputId": "ba4fa692-8c28-42bb-96d8-fde5d41c7a96"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "62"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= [38,21,53,62,19]"
+      ],
+      "metadata": {
+        "id": "lvXFqzAT-AyR"
+      },
+      "execution_count": 19,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.sort()"
+      ],
+      "metadata": {
+        "id": "y4yyPACW-IkN"
+      },
+      "execution_count": 20,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vcxXSM4l-KTe",
+        "outputId": "2d6507a2-21b7-4c9a-f0c1-a24f1fb7a476"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "19"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "오름차순 정리해서 첫번쨰 요소 출력하기"
+      ],
+      "metadata": {
+        "id": "suvl4oXf-4i7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.sort(reverse=True)"
+      ],
+      "metadata": {
+        "id": "5zl_A391-LKe"
+      },
+      "execution_count": 22,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aGBFp8m5-SUv",
+        "outputId": "24f75912-da17-44eb-f019-e4bfb38790ff"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "62"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 23
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "내림차순 정리해서 첫번쨰 요소 출력하기"
+      ],
+      "metadata": {
+        "id": "qjVsdqv6-9ls"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[38,21,53,62,19]"
+      ],
+      "metadata": {
+        "id": "oFYeN3zN-tb1"
+      },
+      "execution_count": 24,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "min(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DUIFf5Wf_Fqt",
+        "outputId": "a3912ad5-62f6-49d4-c54c-88a428b86035"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "19"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "max(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6xj9jQsk_HcK",
+        "outputId": "8f014e5f-d9eb-49a2-c077-239867c94ea9"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "62"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[10,10,10,10,10]"
+      ],
+      "metadata": {
+        "id": "g5L_pDt0_I_F"
+      },
+      "execution_count": 27,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=0"
+      ],
+      "metadata": {
+        "id": "5HHIglqo_Opa"
+      },
+      "execution_count": 28,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in a:\n",
+        "  x +=i"
+      ],
+      "metadata": {
+        "id": "FJBmQtas_PoK"
+      },
+      "execution_count": 29,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=[10,10,10,10,10]"
+      ],
+      "metadata": {
+        "id": "_iqT_DDc_S5d"
+      },
+      "execution_count": 30,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TDQl_bGa_iIM",
+        "outputId": "e9673ba0-0d13-4067-c252-7ad1f79feac5"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "50"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [i for i in range(10)]"
+      ],
+      "metadata": {
+        "id": "_0xxGRNE_jXB"
+      },
+      "execution_count": 32,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ElEzVtj__zts",
+        "outputId": "7f2e5a59-b96b-465a-8ddd-f1aace59c304"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b =list(i for i in range(10))"
+      ],
+      "metadata": {
+        "id": "to9xUEQz_1q-"
+      },
+      "execution_count": 34,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f43jMuYS_620",
+        "outputId": "bedc0f84-87dd-45fd-8611-cb838d5bde97"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 35
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c= [i + 5 for i in range(10)]"
+      ],
+      "metadata": {
+        "id": "fjFL7DPZ_7a7"
+      },
+      "execution_count": 36,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZGTRe7aeARNY",
+        "outputId": "ca57f791-1809-4e8d-e245-94ab1abde029"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[5, 6, 7, 8, 9, 10, 11, 12, 13, 14]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d = [i * 2 for i in range(10)]"
+      ],
+      "metadata": {
+        "id": "_lUQLJIfASQw"
+      },
+      "execution_count": 38,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "d"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Y_8WGrwzAdEB",
+        "outputId": "24b2c877-d512-4184-8864-21a459e7b36c"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [i for i in range(10) if i % 2 == 0]"
+      ],
+      "metadata": {
+        "id": "YzzS_Tp2AeuU"
+      },
+      "execution_count": 40,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DpwvAf-4AzmF",
+        "outputId": "34a9f6b6-0208-43ee-8c99-77ac1f863245"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 2, 4, 6, 8]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b = [i + 5 for i in range(10) if i % 2 == 1]"
+      ],
+      "metadata": {
+        "id": "SUcazFrSA0Rz"
+      },
+      "execution_count": 42,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sOpp_Ul2A_QS",
+        "outputId": "82d92ca4-5bdc-4cff-e7ad-9ba313120d4f"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[6, 8, 10, 12, 14]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a =[i*j for j in range(2,10)for i in range(1,10)]"
+      ],
+      "metadata": {
+        "id": "nxGkyRZxA_wz"
+      },
+      "execution_count": 45,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DLhsX2NhBMS6",
+        "outputId": "15812d60-f83b-4b3c-cf2f-526440359c30"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[2,\n",
+              " 4,\n",
+              " 6,\n",
+              " 8,\n",
+              " 10,\n",
+              " 12,\n",
+              " 14,\n",
+              " 16,\n",
+              " 18,\n",
+              " 3,\n",
+              " 6,\n",
+              " 9,\n",
+              " 12,\n",
+              " 15,\n",
+              " 18,\n",
+              " 21,\n",
+              " 24,\n",
+              " 27,\n",
+              " 4,\n",
+              " 8,\n",
+              " 12,\n",
+              " 16,\n",
+              " 20,\n",
+              " 24,\n",
+              " 28,\n",
+              " 32,\n",
+              " 36,\n",
+              " 5,\n",
+              " 10,\n",
+              " 15,\n",
+              " 20,\n",
+              " 25,\n",
+              " 30,\n",
+              " 35,\n",
+              " 40,\n",
+              " 45,\n",
+              " 6,\n",
+              " 12,\n",
+              " 18,\n",
+              " 24,\n",
+              " 30,\n",
+              " 36,\n",
+              " 42,\n",
+              " 48,\n",
+              " 54,\n",
+              " 7,\n",
+              " 14,\n",
+              " 21,\n",
+              " 28,\n",
+              " 35,\n",
+              " 42,\n",
+              " 49,\n",
+              " 56,\n",
+              " 63,\n",
+              " 8,\n",
+              " 16,\n",
+              " 24,\n",
+              " 32,\n",
+              " 40,\n",
+              " 48,\n",
+              " 56,\n",
+              " 64,\n",
+              " 72,\n",
+              " 9,\n",
+              " 18,\n",
+              " 27,\n",
+              " 36,\n",
+              " 45,\n",
+              " 54,\n",
+              " 63,\n",
+              " 72,\n",
+              " 81]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 46
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [1.2,2.5,3.7,4.6]"
+      ],
+      "metadata": {
+        "id": "H9Y6o02mBReA"
+      },
+      "execution_count": 47,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(len(a)):\n",
+        "  a[i] = int(a[i])"
+      ],
+      "metadata": {
+        "id": "HNZjJMuHBoSk"
+      },
+      "execution_count": 48,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EAROra1PBuaJ",
+        "outputId": "ebd34b4c-042d-4667-9237-0e9819f5de7f"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3, 4]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 49
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [1.2,2.5,3.7,4.6]"
+      ],
+      "metadata": {
+        "id": "eB3id2K8ByMI"
+      },
+      "execution_count": 50,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = list(map(int,a))"
+      ],
+      "metadata": {
+        "id": "b_JJm9CYB7G5"
+      },
+      "execution_count": 51,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hvXYW3KcB9vB",
+        "outputId": "52c83d2e-de62-4329-9a13-43bff74e905d"
+      },
+      "execution_count": 52,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3, 4]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 52
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= list(map(str,range(10)))"
+      ],
+      "metadata": {
+        "id": "TlovEN_lB-DY"
+      },
+      "execution_count": 53,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eWqDp4naCE4h",
+        "outputId": "72c5ca61-ec9c-4b74-9a4a-e8da683fc848"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 54
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= input().split()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NFGYQ1-_CFXN",
+        "outputId": "1a8223d1-da0e-4159-8384-e67179cc3346"
+      },
+      "execution_count": 55,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "10 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DiorLm6YCL69",
+        "outputId": "af355391-01b3-41da-f9dd-2858d84a88da"
+      },
+      "execution_count": 56,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['10', '20']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 56
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = map(int,input().split())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VIZJnPkUCNwP",
+        "outputId": "98299f4f-574e-4d2c-83b1-cdd9cf340a12"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "10 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "57kNnzz8CStW",
+        "outputId": "c6dc6278-1068-488e-d4a6-d927023b99d0"
+      },
+      "execution_count": 58,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<map at 0x7f2e5e1ee850>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 58
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "q3KBZu_1CUF3",
+        "outputId": "28028c7b-8377-4b81-adde-26174c4ff9ab"
+      },
+      "execution_count": 59,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 20]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 59
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a,b = [10,20]"
+      ],
+      "metadata": {
+        "id": "9KTIcc1rCV2K"
+      },
+      "execution_count": 60,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "owEQWSsHCaEp",
+        "outputId": "417ac9ed-09b2-4d13-d7c4-fdd21a8b2801"
+      },
+      "execution_count": 61,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "10"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 61
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vRc6Uws8Cax0",
+        "outputId": "f686ebf6-8bd4-46ee-a14f-1baa7b3bd625"
+      },
+      "execution_count": 62,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "20"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 62
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=input().split()\n",
+        "m = map(int,x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EzcfHl3vCbKz",
+        "outputId": "f3482008-b755-43c8-f43f-3f1e683a18fe"
+      },
+      "execution_count": 64,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "10 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= (38,21,53,62,19,53)"
+      ],
+      "metadata": {
+        "id": "Scwix0LvChPj"
+      },
+      "execution_count": 65,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.index(53)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f_Ye85PWCxYI",
+        "outputId": "9b41e6a7-709b-4ba0-e1f8-b119b562c324"
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 66
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = (10,20,30,15,20,40)"
+      ],
+      "metadata": {
+        "id": "C6ebe4iDCzgA"
+      },
+      "execution_count": 68,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a.count(20)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AaljSVJ7C3cX",
+        "outputId": "0667f259-2601-4f4e-dfb3-140ec76b363e"
+      },
+      "execution_count": 69,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 69
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in a:\n",
+        "  print(i,end=' ')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mgf1jFVtC7qW",
+        "outputId": "03230beb-9d9d-48b9-e1c7-5a87e0391239"
+      },
+      "execution_count": 72,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 20 30 15 20 40 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = tuple(i for i in range(10) if i % 2 ==0)"
+      ],
+      "metadata": {
+        "id": "T-_NV0woDE3F"
+      },
+      "execution_count": 73,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6u4Hndx3D0ln",
+        "outputId": "025fa434-cc93-4d3f-d27a-28dc4070168c"
+      },
+      "execution_count": 74,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(0, 2, 4, 6, 8)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 74
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= (1.2,2.5,3.7,4.6)"
+      ],
+      "metadata": {
+        "id": "PYmPWY5GD2vR"
+      },
+      "execution_count": 75,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = tuple(map(int,a))"
+      ],
+      "metadata": {
+        "id": "_0RfwBq_EHek"
+      },
+      "execution_count": 78,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eHTb1qQdEWPw",
+        "outputId": "d0c1f400-c956-4291-f177-94859fb476bc"
+      },
+      "execution_count": 79,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(1, 2, 3, 4)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 79
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a =(38,21,53,62,19)"
+      ],
+      "metadata": {
+        "id": "l9T1CM56Ec_D"
+      },
+      "execution_count": 80,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "min(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ygB_S_XEEiFk",
+        "outputId": "8a408d90-2dca-4bb6-d5ee-90d9388ed3cd"
+      },
+      "execution_count": 81,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "19"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 81
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "max(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2iDhlBnnEjHc",
+        "outputId": "db4309bc-0948-43ca-9aeb-57ff80b5a80b"
+      },
+      "execution_count": 82,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "62"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 82
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Sg0NK3HtEkAp",
+        "outputId": "d80ade90-c82c-4c22-ea42-4c2a051e45bb"
+      },
+      "execution_count": 83,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "193"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 83
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "KNe9k4ZwEkxO"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
