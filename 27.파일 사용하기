@@ -1,0 +1,343 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled28.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPcVtXUfs4VC9pXuG+ldZJb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/27.%ED%8C%8C%EC%9D%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "ooGJ_w5dU2nS"
+      },
+      "outputs": [],
+      "source": [
+        "file = open('hello.txt', 'w')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "file.write('Hello,world!')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AwsFIJidVEyb",
+        "outputId": "3df82a71-1ab3-45a1-e81e-4e5edc245ab1"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "12"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "file.close()"
+      ],
+      "metadata": {
+        "id": "TbXaAUFtVIfj"
+      },
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "file = open('hello.txt','r')"
+      ],
+      "metadata": {
+        "id": "95imyu9jVKQq"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s = file.read()"
+      ],
+      "metadata": {
+        "id": "XV0k6tIMV9FE"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(s)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tP-ygyArV_rG",
+        "outputId": "866f2e5b-9fda-4225-ff59-f0d64c99c11e"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello,world!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "file.close()"
+      ],
+      "metadata": {
+        "id": "9a3KF1mJWA-T"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open('hello.txt','r') as file:\n",
+        "  s= file.read()\n",
+        "  print(s)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3_1xacJaWDQz",
+        "outputId": "29aced30-8e13-40a6-ce5e-20f9dc847220"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello,world!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open('hello.txt','w') as file:\n",
+        "  for i in range(3):\n",
+        "    file.write('Hello,world! {0}\\n'.format(i))"
+      ],
+      "metadata": {
+        "id": "5aZ02c5CWXVV"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lines = ['안녕하세요.\\n', '파이썬\\n','코딩 도장입니다.\\n']\n",
+        "with open('hello.txt','w')as file:\n",
+        "  file.writelines(lines)"
+      ],
+      "metadata": {
+        "id": "Hmiik6rSZQWZ"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open('hello.txt','r') as file:\n",
+        "  lines = file.readlines()\n",
+        "  print(lines)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PenxgnjMdBSV",
+        "outputId": "06bde3d7-beb3-482c-e5aa-f3fd7a91f08c"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['안녕하세요.\\n', '파이썬\\n', '코딩 도장입니다.\\n']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open('hello.txt','r') as file:\n",
+        "  line = None\n",
+        "  while line != '':\n",
+        "    line = file.readline()\n",
+        "    print(line.strip('\\n'))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hNWgPjc0d_Pu",
+        "outputId": "d9803856-bda6-4ee9-ca65-bbb365d9c67e"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "안녕하세요.\n",
+            "파이썬\n",
+            "코딩 도장입니다.\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open('hello.txt','r') as file:\n",
+        "  for line in file:\n",
+        "    print(line.strip('\\n'))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vu76JYGoes7o",
+        "outputId": "903b1123-31e7-4f5d-f02e-e2917c445b3f"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "안녕하세요.\n",
+            "파이썬\n",
+            "코딩 도장입니다.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pickle\n",
+        "name = 'james'\n",
+        "age = 17\n",
+        "address ='서울시 서초구 반포동'\n",
+        "scores = {'korean':90, 'english':95,'mathematics':85, 'science':82}"
+      ],
+      "metadata": {
+        "id": "unLJeCUDfZjJ"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open('james.p','wb') as file:\n",
+        "  pickle.dump(name,file)\n",
+        "  pickle.dump(age,file)\n",
+        "  pickle.dump(address,file)\n",
+        "  pickle.dump(scores,file)"
+      ],
+      "metadata": {
+        "id": "jSzUMnQQgUQQ"
+      },
+      "execution_count": 17,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pickle\n",
+        "with open('james.p','rb')as file:\n",
+        "  name = pickle.load(file)\n",
+        "  age = pickle.load(file)\n",
+        "  address = pickle.load(file)\n",
+        "  print(name)\n",
+        "  print(age)\n",
+        "  print(address)\n",
+        "  print(scores)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "z22-OmiwmP1X",
+        "outputId": "f84be50d-4cd0-4719-a24d-971bed20d4a2"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "james\n",
+            "17\n",
+            "서울시 서초구 반포동\n",
+            "{'korean': 90, 'english': 95, 'mathematics': 85, 'science': 82}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "Y3joUpTknY9f"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
