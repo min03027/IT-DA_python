@@ -1,0 +1,115 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled32.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyODF/gB8IRk8mZag4ko9TFz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/31.%20%ED%95%A8%EC%88%98%EC%97%90%EC%84%9C%20%EC%9E%AC%EA%B7%80%ED%98%B8%EC%B6%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "9onZBPpQPty3"
+      },
+      "outputs": [],
+      "source": [
+        "def hello():\n",
+        "  print('Hello,world!')\n",
+        "  hello()"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def hello(count):\n",
+        "  if count == 0:\n",
+        "    return\n",
+        "  print('Hello,world!',count)\n",
+        "  count -= 1\n",
+        "  hello(count)\n",
+        "hello(5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Px1JgciFP1f1",
+        "outputId": "ec19ff0b-f82d-4f06-d0ad-78ff75bfcee0"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello,world! 5\n",
+            "Hello,world! 4\n",
+            "Hello,world! 3\n",
+            "Hello,world! 2\n",
+            "Hello,world! 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def factorial(n):\n",
+        "  if n == 1:\n",
+        "    return 1\n",
+        "  return n * factorial(n-1)\n",
+        "print(factorial(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jktsEVBaQhly",
+        "outputId": "94fa66c4-d42e-4ed7-ad65-8843562d53c5"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "120\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "XV-vN4NERoXK"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
