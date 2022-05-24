@@ -1,0 +1,799 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled31.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyN6ACeHy0XAXK/yZ1UwNlr0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/30.%ED%95%A8%EC%88%98%EC%97%90%EC%84%9C%20%EC%9C%84%EC%B9%98%20%EC%9D%B8%EC%88%98%EC%99%80%20%ED%82%A4%EC%9B%8C%EB%93%9C%20%EC%9D%B8%EC%88%98%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BZd794SoC_n4",
+        "outputId": "04b10439-e4ec-4a81-ca50-38055c924d1e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 20 30\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(10,20,30)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def print_numbers(a,b,c):\n",
+        "  print(a)\n",
+        "  print(b)\n",
+        "  print(c)"
+      ],
+      "metadata": {
+        "id": "sKTVkrGoDYBy"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(10,20,30)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vDVBgRarDgEI",
+        "outputId": "09f5ea3a-3c6b-459c-811b-acb4466a1a6e"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "20\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = [10,20,30]"
+      ],
+      "metadata": {
+        "id": "9ptnXvbXDjkR"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(*x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gNSrO_QQDmQk",
+        "outputId": "cad4a1b7-38c8-4e2a-bbf4-2c13621eb039"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "20\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(*[10,20,30])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xOhRaFNMDpbg",
+        "outputId": "d2c1b595-81fa-41b8-98ec-b285e73fa9ec"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "20\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def print_numbers(*args):\n",
+        "  for arg in args:\n",
+        "    print(arg)"
+      ],
+      "metadata": {
+        "id": "Vk8ar-QMD9PZ"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SR1LEu2pFUS8",
+        "outputId": "0d6a4888-72f0-486b-b4f3-95fe4f891d24"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(10,20,30,40)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d9AjLgC3F072",
+        "outputId": "079f1094-55a0-4118-c611-9da221a55ea8"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "20\n",
+            "30\n",
+            "40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = [10]"
+      ],
+      "metadata": {
+        "id": "rPEmZmCRF3zy"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(*x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7lFU0czkF8jl",
+        "outputId": "9113046e-e0e5-47e7-bccf-cbca8e41eea0"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y = [10,20,30,40]"
+      ],
+      "metadata": {
+        "id": "OksH1KkYGBxj"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(*y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y7RT1QZVGESq",
+        "outputId": "f77ce3ab-7a17-4814-8625-11e2765c7443"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "20\n",
+            "30\n",
+            "40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def print_numbers(a,*args):\n",
+        "  print(a)\n",
+        "  print(args)\n",
+        "print_numbers(1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xOSxI-i8GGPr",
+        "outputId": "eb5af56d-ec15-4a07-b8e4-8f9626a1e2ed"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "()\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(1,10,20)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JS8AsRGCGc37",
+        "outputId": "1b8dfc85-c777-4aeb-be5f-5ccd6ed2a71c"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "(10, 20)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print_numbers(*[10,20,30])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sJ5DuhjIGf5Z",
+        "outputId": "1d41df1e-7947-4bc0-a708-a0039783b916"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "(20, 30)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def personal_info(name,age,address):\n",
+        "  print('이름: ',name)\n",
+        "  print('나이: ',age)\n",
+        "  print('주소: ',address)"
+      ],
+      "metadata": {
+        "id": "Hi95ltioGl4K"
+      },
+      "execution_count": 20,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info('홍길동',30,'서울시 용산구 이촌동')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jIGXgYkmHivr",
+        "outputId": "12631bae-fc95-4e7f-bc6f-03d88852f8d1"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름:  홍길동\n",
+            "나이:  30\n",
+            "주소:  서울시 용산구 이촌동\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info(name ='홍길동',age=30,address='서울시 용산구 이촌동')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F-OsG9DWIPHE",
+        "outputId": "dda6076d-88e9-496b-d5b2-61bea6b79879"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름:  홍길동\n",
+            "나이:  30\n",
+            "주소:  서울시 용산구 이촌동\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(10,20,30,sep=':', end='')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JSY-sgAiJCIA",
+        "outputId": "52965a63-ec49-4eb4-b46b-08d56a019882"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10:20:30"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def personal_info(name,age,address):\n",
+        "  print('이름:',name)\n",
+        "  print('나이: ',age)\n",
+        "  print('주소:',address)"
+      ],
+      "metadata": {
+        "id": "7X67dmWZJIsY"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x ={'name': '홍길동','age': 30, 'address': '서울시 용산구 이촌동'}\n",
+        "personal_info(**x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CgKQnEmVJkVn",
+        "outputId": "ed81f38e-2318-4d86-d64c-503eebef4252"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름: 홍길동\n",
+            "나이:  30\n",
+            "주소: 서울시 용산구 이촌동\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info(**{'name': '홍길동', 'age': 30, 'address': '서울시 용산구 이촌동'})"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FPm7kRisJ5DN",
+        "outputId": "ee9fbd6f-9888-432f-e6b2-edf656c753a7"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름: 홍길동\n",
+            "나이:  30\n",
+            "주소: 서울시 용산구 이촌동\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = {'name': '홍길동', 'age': 30, 'address': '서울시 용산구 이촌동'}"
+      ],
+      "metadata": {
+        "id": "nayqav9vKCkB"
+      },
+      "execution_count": 28,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info(*x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QF1Pvz5dKFf3",
+        "outputId": "f345843c-4825-47a7-f7ab-c8bf3b00eb2b"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름: name\n",
+            "나이:  age\n",
+            "주소: address\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = {'name': '홍길동','age':30,'address':'서울시 용산구 이촌동'}\n",
+        "personal_info(**x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IOMMgo4IKJEI",
+        "outputId": "7f20f359-3d82-4357-9f79-33e06c9a2e7e"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름: 홍길동\n",
+            "나이:  30\n",
+            "주소: 서울시 용산구 이촌동\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def personal_info(**kwargs):\n",
+        "  for kw, arg in kwargs.items():\n",
+        "    print(kw,': ',arg,sep='')"
+      ],
+      "metadata": {
+        "id": "ttwIu7m3KcA5"
+      },
+      "execution_count": 31,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info(name='jimin')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "j-zblOFSK6o1",
+        "outputId": "3a610390-d534-4f6b-c834-db7b8bf0da22"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "name: jimin\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info(name='jimin',age=30,address='seoul')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "53p3xKJVK___",
+        "outputId": "452a0678-f61d-4724-9e06-31c6aed73124"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "name: jimin\n",
+            "age: 30\n",
+            "address: seoul\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = {'name':'jimin'}"
+      ],
+      "metadata": {
+        "id": "b5LMa8RGLNBw"
+      },
+      "execution_count": 35,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info(**x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5EfsXYfWLSdz",
+        "outputId": "7fd479ba-f62f-4020-ec30-1ecc83c4d822"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "name: jimin\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y = {'name':'jimin','age':20,'address':'seoul'}"
+      ],
+      "metadata": {
+        "id": "np03ZHd9LU1C"
+      },
+      "execution_count": 37,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info(**y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4wv5Ne0YLf34",
+        "outputId": "5bc400e8-b91e-4a8e-bf8c-59827bade92d"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "name: jimin\n",
+            "age: 20\n",
+            "address: seoul\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def personal_info(**kwargs):\n",
+        "  if 'name' in kwargs:\n",
+        "    print('name: ',kwargs['name'])\n",
+        "  if 'age' in kwargs:\n",
+        "    print('age: ',kwargs['age'])\n",
+        "  if 'address' in kwargs:\n",
+        "    print('address:',kwargs['address'])"
+      ],
+      "metadata": {
+        "id": "40f_HlfZLijs"
+      },
+      "execution_count": 40,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def personal_info(name,age,address='비공개'):\n",
+        "  print('이름:', name)\n",
+        "  print('나이:', age)\n",
+        "  print('주소:',address)"
+      ],
+      "metadata": {
+        "id": "A78MCRjpMKUj"
+      },
+      "execution_count": 45,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info('홍길동',30)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x9aGFuD9NETl",
+        "outputId": "02de5c33-3fa4-406f-a0c9-7f0d84601b6d"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름: 홍길동\n",
+            "나이: 30\n",
+            "주소: 비공개\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "personal_info('홍길동',30,'서울시 용산구 이촌동')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9UFY8codNM49",
+        "outputId": "83be25ed-deba-4fff-face-4d5f04cbfb59"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "이름: 홍길동\n",
+            "나이: 30\n",
+            "주소: 서울시 용산구 이촌동\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "UNC0l54JOAKK"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
