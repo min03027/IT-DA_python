@@ -1,0 +1,442 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled35.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPs4U232PEx/vaGS2HYxntB",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/min03027/IT-DA_python/blob/main/34.%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "i67xBCSLbOuX"
+      },
+      "outputs": [],
+      "source": [
+        "class person:\n",
+        "  def greeting(self):\n",
+        "    print('Hello')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "james = person()"
+      ],
+      "metadata": {
+        "id": "-Mfq8GVAenLc"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "james.greeting()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t0XJAJUdeyCm",
+        "outputId": "c2166dd6-28f3-4580-f2fc-24018ddbd181"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= int(10)"
+      ],
+      "metadata": {
+        "id": "G7KblRu2e1cC"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W94GVQEue55k",
+        "outputId": "611d7a6d-14df-48eb-f52a-7f9b0cdb226a"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "10"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b = list(range(10))"
+      ],
+      "metadata": {
+        "id": "FHgBFwYIe6H-"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bTfxKROle8Cz",
+        "outputId": "d9f30663-8ee8-4bbf-8506-9fd4efadfab6"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c=dict(x=10,y=20)"
+      ],
+      "metadata": {
+        "id": "SOAJFCC1e8dM"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XxRiTj8se_08",
+        "outputId": "424eb795-6fd3-4c2e-f70c-690054294cfa"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'x': 10, 'y': 20}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b=list(range(10))"
+      ],
+      "metadata": {
+        "id": "bL0xaVBLfAFO"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b.append(20)"
+      ],
+      "metadata": {
+        "id": "ys4UelWgfDuR"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OXIllg1sfFRc",
+        "outputId": "63137478-e7c0-47f2-e446-e573d743fcb5"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= list(range(10))"
+      ],
+      "metadata": {
+        "id": "RU6hpx6vfImU"
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "b=list(range(20))"
+      ],
+      "metadata": {
+        "id": "6pGjwfZsfNmt"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class person:\n",
+        "  pass"
+      ],
+      "metadata": {
+        "id": "zBJyBm6rfPRG"
+      },
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class person:\n",
+        "  def greeting(self):\n",
+        "    print('Hello')\n",
+        "  def hello(self):\n",
+        "    self.greeting()\n",
+        "james = person()\n",
+        "james.hello()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1rR6MrHefS5P",
+        "outputId": "5f69175a-3b78-4c59-a77a-41502f59a3bb"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class person:\n",
+        "  def __init__(self):\n",
+        "    self.hello = '안녕하세요'\n",
+        "  def greeting(self):\n",
+        "    print(self.hello)\n",
+        "james = person()\n",
+        "james.greeting()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rMHsbdhkgnN-",
+        "outputId": "5c6b833c-f7a3-4d4e-c55d-b6ba96f73441"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "안녕하세요\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class person:\n",
+        "  def __init__(self,name,age,address):\n",
+        "    self.hello = '안녕하세요'\n",
+        "    self.name = name\n",
+        "    self.age = age\n",
+        "    self.address = address\n",
+        "  def greeting(self):\n",
+        "   print('{0} 저는 {1}입니다.'.format(self.hello,self.name))\n",
+        "maria = person('마리아',20,'서울시 서초구 반포동')\n",
+        "maria.greeting()\n",
+        "\n",
+        "print('이름:',maria.name)\n",
+        "print('나이:',maria.age)\n",
+        "print('주소:',maria.address)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AW0EQ2IRhHOQ",
+        "outputId": "1b948855-9098-4cfc-fb89-0f048584ae24"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "안녕하세요 저는 마리아입니다.\n",
+            "이름: 마리아\n",
+            "나이: 20\n",
+            "주소: 서울시 서초구 반포동\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class person:\n",
+        "  def __init__(self, name, age, address):\n",
+        "    self.hello = '안녕하세요'\n",
+        "    self.name = name\n",
+        "    self.age = age\n",
+        "    self.address = address"
+      ],
+      "metadata": {
+        "id": "3UBr5NivhiGU"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "maria = person('마리아', 20, '서울시 서초구 반포동')\n",
+        "maria.name"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "3IMq_J3lh35o",
+        "outputId": "e7dc027a-34d0-41b4-9e4c-7dbf4884d5f0"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'마리아'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Person:\n",
+        "  def __init__(self,name, age, address, wallet):\n",
+        "    self.name = name\n",
+        "    self.age = age\n",
+        "    self.address = address\n",
+        "    self.__wallet = wallet"
+      ],
+      "metadata": {
+        "id": "gvNWE0zEuZ14"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "Ij4mEBgNuy1Z"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
